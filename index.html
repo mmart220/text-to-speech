@@ -40,10 +40,10 @@
     <h1 class="mdc-typography--display1">Hello, World!</h1>
     
     <input type="text" name="phrase" id="phrase">
-    <button type="button" class="mdc-button mdc-button--raised">
+    <button type="button" class="special mdc-button mdc-button--raised">
       Say phrase
     </button>
-    <button type="button" class="mdc-button mdc-button--raised">
+    <button type="button" class=" standardmdc-button mdc-button--raised">
       Stop playing around!
     </button>
     <br>
@@ -101,8 +101,8 @@
             
         // hook up event handler on the buttons
         
-         $("button").on("click", function() {
-           sayIt($(this).text());
+         $("button.special").on("click", function() {
+           sayIt($("#phrase").val());
          });
         
 
